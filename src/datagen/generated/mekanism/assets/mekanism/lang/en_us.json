@@ -1623,6 +1623,8 @@
   "configuration.mekanism.usage.seismic_vibrator.energy.tooltip": "Energy per operation in Joules of: Seismic Vibrator",
   "configuration.mekanism.usage.stabilizer.energy": "Dimensional Stabilizer Energy Usage",
   "configuration.mekanism.usage.stabilizer.energy.tooltip": "Energy per chunk per tick in Joules.",
+  "configuration.mekanism.usage.random": "Randomized Item Usage",
+  "configuration.mekanism.usage.random.tooltip": "If enabled, injectors and purifiers will consume a randomized amount of gas each operation.",
   "configuration.mekanism.usage.teleporter": "Teleporter",
   "configuration.mekanism.usage.teleporter.base": "Base Energy Usage",
   "configuration.mekanism.usage.teleporter.base.tooltip": "Base cost in Joules for teleporting an entity.",
