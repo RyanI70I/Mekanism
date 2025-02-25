@@ -210,7 +210,7 @@ public class TileEntityItemStackChemicalToItemStackFactory extends TileEntityIte
     }
 
     private boolean useStatisticalMechanics() {
-        return (type == FactoryType.INJECTING || type == FactoryType.PURIFYING) && MekanismConfig.usage.randomizedConsumption.get();
+        return MekanismConfig.usage.randomizedConsumption.get() && (type == FactoryType.INJECTING || type == FactoryType.PURIFYING);
     }
 
     @Nullable

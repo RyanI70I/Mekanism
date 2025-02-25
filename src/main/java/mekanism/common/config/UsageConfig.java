@@ -79,8 +79,9 @@ public class UsageConfig extends BaseMekanismConfig {
         pigmentMixer = CachedLongValue.definePositive(this, builder, MekanismConfigTranslations.ENERGY_USAGE_PIGMENT_MIXER, "pigmentMixer", 200L);
         paintingMachine = CachedLongValue.definePositive(this, builder, MekanismConfigTranslations.ENERGY_USAGE_PAINTING, "paintingMachine", 100L);
         dimensionalStabilizer = CachedLongValue.definePositive(this, builder, MekanismConfigTranslations.ENERGY_USAGE_DIMENSIONAL_STABILIZER, "dimensionalStabilizer", 5_000L);
-        randomizedConsumption = CachedBooleanValue.wrap(this, MekanismConfigTranslations.ITEM_USAGE_RANDOMIZED.applyToBuilder(builder)
-                .define("randomizedConsumption",true));
+        randomizedConsumption = CachedBooleanValue.wrap(this, MekanismConfigTranslations.SECONDARY_CHEMICAL_USAGE_RANDOMIZED.applyToBuilder(builder)
+              .worldRestart()
+              .define("randomizedConsumption", true));
 
         MekanismConfigTranslations.USAGE_TELEPORTER.applyToBuilder(builder).push("teleporter");
         teleporterBase = CachedLongValue.definePositive(this, builder, MekanismConfigTranslations.USAGE_TELEPORTER_BASE, "base", 1_000L);
